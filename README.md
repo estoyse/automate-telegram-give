@@ -9,20 +9,27 @@ This is a simple Telegram bot that forwards messages from one channel to another
 3. Save the API ID and hash to your environment variables by adding `TELEGRAM_API_ID=<your_api_id>` and `TELEGRAM_API_HASH=<your_api_hash>` to your `.env` file.
 
 4. Install [npm](https://www.npmjs.com/) and [node.js](https://nodejs.org/en/) on your machine.
-5. Run `npm install` to install the required packages.
+5. Clone this repository and navigate to the root directory.
 
+   ```bash
+   git clone https://github.com/estoyse/automate-telegram-give.git
+   cd automate-telegram-give
    ```
+
+6. Run `npm install` to install the required packages.
+
+   ```bash
    npm install
    ```
 
-6. Run `init.js` locally on your machine to get your Telegram string session. You will need to enter your phone number and confirmation code.
+7. Run `init.js` locally on your machine to get your Telegram string session. You will need to enter your phone number and confirmation code.
 
-   ```
+   ```bash
    node init.js
    ```
 
-7. Save the string session to your environment variables by adding `TELEGRAM_STRING_SESSION=<your_string_session>` to your `.env` file.
-8. Deploy your bot to Koyeb by clicking on the button below.
+8. Save the string session to your environment variables by adding `TELEGRAM_STRING_SESSION=<your_string_session>` to your `.env` file.
+9. Deploy your bot to Koyeb by clicking on the button below.
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=automate-telegram-give&type=git&repository=https%3A%2F%2Fgithub.com%2Festoyse%2Fautomate-telegram-give&branch=main&run_command=node+index.js&instance_type=free&env%5BTELEGRAM_API_HASH%5D=&env%5BTELEGRAM_API_ID%5D=&env%5BTELEGRAM_STRING_SESSION%5D=&env%5BFORWARD_TO_CHANNEL_USERNAME%5D=&env%5BSTEAM_LINK%5D=&env%5BTELEGRAM_USERNAME%5D=)
 
