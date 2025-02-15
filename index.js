@@ -1,5 +1,6 @@
 import { TelegramClient } from "telegram";
 import { StringSession } from "telegram/sessions/index.js";
+import initExpress from "./express.js"
 import {
   FORWARD_TO_CHANNEL_USERNAME,
   TELEGRAM_API_HASH,
@@ -43,3 +44,5 @@ async function handleMessage(event) {
     }
   }
 }
+
+initExpress();
