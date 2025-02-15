@@ -1,6 +1,7 @@
 import { TelegramClient } from "telegram";
 import { StringSession } from "telegram/sessions/index.js";
 import {
+  FORWARD_TO_CHANNEL_USERNAME,
   TELEGRAM_API_HASH,
   TELEGRAM_API_ID,
   TELEGRAM_STRING_SESSION,
@@ -23,7 +24,7 @@ async function handleMessage(event) {
   const { message } = event;
 
   if (event.isChannel && message.peerId.channelId.value === -1002405233783n) {
-    await client.forwardMessages("estoyseLog", {
+    await client.forwardMessages(FORWARD_TO_CHANNEL_USERNAME, {
       messages: message.id, // Can be an array of IDs
       fromPeer: message.peerId.channelId, // Source chat
     });

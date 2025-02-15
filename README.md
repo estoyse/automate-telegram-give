@@ -20,8 +20,10 @@ This is a simple Telegram bot that forwards messages from one channel to another
    ```
 
 7. Save the string session to your environment variables by adding `TELEGRAM_STRING_SESSION=<your_string_session>` to your `.env` file.
-8. Deploy your bot to Koyeb by following the [deployment guide](https://www.koyeb.com/docs/introduction/getting-started).
+8. Deploy your bot to Koyeb by clicking on the button below.
 
-## You can deploy using this button:
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=automate-telegram-give&type=git&repository=https%3A%2F%2Fgithub.com%2Festoyse%2Fautomate-telegram-give&branch=main&run_command=node+index.js&instance_type=free&env%5BTELEGRAM_API_HASH%5D=&env%5BTELEGRAM_API_ID%5D=&env%5BTELEGRAM_STRING_SESSION%5D=&env%5FORWARD_TO_CHANNEL_USERNAME%5D=)
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&builder=buildpack&repository=github.com/koyeb/example-nestjs&branch=main&name=nestjs-on-koyeb)
+9. Check the instance type and set to `Free` if necessary.
+10. Override the run command and set it to `node index.js` (At the Builder section).
+11. Enter your environment variables in the Koyeb dashboard and click on the "Start" button to start the bot.
